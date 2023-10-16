@@ -1,38 +1,135 @@
-.App {
+*{
+  padding: 0;
+  margin: 0;
+}
+
+table{
+  border: 1px black solid;
+  border-collapse: collapse;
+}
+
+th,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 2px;
+}
+
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around !important;
+  align-items: center;
+  padding: 10px;
+  background-color: #3498db;
+}
+
+nav button{
+  margin: 10px;
+}
+nav form {
+  display: flex;
+  align-items: center;
+}
+
+nav label {
+  margin: 10px;
+  color: #fff;
+
+}
+
+nav p{
+  color: #fff;
+  margin: 10px;
+}
+nav input[type="text"] {
+  padding: 5px;
+}
+
+nav button {
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+
+.confirm-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 10;
+}
+
+.confirm-card h2{
+  color: #3498db;
+}
+
+.confirm-card{
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  z-index:11;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+table th,
+table td {
+  padding: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table th {
+  background-color: #3498db;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+table td input[type="checkbox"] {
+  transform: scale(1.5);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
-.App-link {
-  color: #61dafb;
+table tr:hover {
+  background-color: #d9edf7;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: 2px #fff solid;
+  padding: 5px 10px;
+  cursor: pointer;
 }
