@@ -1,0 +1,195 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+table{
+  border: 1px black solid;
+  border-collapse: collapse;
+}
+
+th,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 2px;
+}
+
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around !important;
+  align-items: center;
+  padding: 10px;
+  background-color: #3498db;
+  min-width: 100%;
+}
+
+nav button{
+  margin: 10px;
+}
+nav form {
+  display: flex;
+  align-items: center;
+}
+
+nav label {
+  margin: 10px;
+  color: #fff;
+
+}
+
+nav p{
+  color: #fff;
+  margin: 10px;
+}
+nav input[type="text"] {
+  padding: 5px;
+}
+
+nav button {
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+nav button:hover{
+  background-color: #2ecc71;
+  box-shadow: 0px 0px 10px rgba(3, 26, 10, 0.5);
+}
+
+
+.confirm-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 10;
+}
+
+/* StudentChart.css */
+.Piecontainer-1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.PieContainer {
+  background-color: #cfe0e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 11;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+  width: 80%; 
+  max-height: 80%; 
+}
+
+#Pie{
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.PieContainer h2 {
+  color: #312e2e;
+  padding: 20px;
+  display: inline-block;
+}
+
+.PieContainer button {
+  padding: 5px 10px;
+  background-color: #2ecc71;
+  border-radius: 5px;
+}
+
+#confirm-card h2{
+  color: #f4f6f7;
+}
+
+#confirm-card{
+  background-color: #3498db;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  z-index:11;
+}
+
+#confirm-card p{
+  color: black;
+  font-weight: 500 !important;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+
+table th,
+table td {
+  padding: 10px;
+  text-align: center;
+}
+
+table th {
+  background-color: #3498db;
+  color: #fff;
+}
+
+table td input[type="checkbox"] {
+  transform: scale(1.5);
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #d9edf7;
+}
+
+button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: 2px #fff solid;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
