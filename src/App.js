@@ -3,7 +3,6 @@ import Confirmation from './Confirmation.js';
 import StudentPieChart from "./StudentPieChart.js";
 import './App.css';
 
-
 function App() {
   const defaultData = [
     {
@@ -25,6 +24,7 @@ function App() {
   const [showConfirmation, setShowConfirmation] = useState(false);
   const [studentToAdd, setStudentToAdd] = useState("");
   const [selectedStudent, setSelectedStudent] = useState(null);
+  //const [searchStudent,setSearchStudent] = useState("");  
 
   const showPieChart = (student) => {
     setSelectedStudent(student);
@@ -98,8 +98,8 @@ function App() {
     const deletedStudentList = studentData.filter(student => student.Id !== Id);
     setStudentData(deletedStudentList);
   };
-
-  return (
+  
+    return (
     <div>
       <h1>Student Attendance List</h1>
       <nav>
@@ -144,7 +144,7 @@ function App() {
             return (
               <tr key={student.Id}>
                 <td>
-                  <button onClick={() => showPieChart(student)}>{student.name}</button>
+                  <button onClick={() => showPieChart(student)} id="st-name">{student.name}</button>
                 </td>
                 <td>{student.regno}</td>
                 {student.attendance.map((isPresent, attendanceIndex) => (
